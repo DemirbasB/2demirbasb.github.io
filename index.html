@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gitar Öğreniyoruz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: "Kalam", cursive;
+      }
+      body {
+        background-image: url(./pexels-pixabay-210766.jpg);
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .head {
+        height: 150px;
+        background-image: url(./pexels-edward-eyer-811838.jpg);
+        background-size: cover;
+        background-position: center left;
+        padding: 35px 30px 0px 30px;
+      }
+      .border {
+        background-color: #fff;
+        height: 8px;
+      }
+      .mainpage {
+        display: inline-block;
+      }
+      .links {
+        display: inline-block;
+        font-size: 24px;
+        width: calc(100% - 403px);
+        text-align: right;
+      }
+      .title {
+        text-decoration: none;
+        color: #f0ece2;
+        font-size: 52px;
+        font-weight: 700;
+      }
+      .link {
+        text-decoration: none;
+        font-weight: 700;
+        color: #f0ece2;
+        padding-left: 20px;
+      }
+      .aaa {
+        vertical-align: middle;
+      }
+      .main {
+        height: 600px;
+      }
+      .main h2 {
+        padding-top: 60px;
+        text-align: center;
+        font-size: 36px;
+        color: #f0ece2;
+      }
+      .main p {
+        color: #f0ece2;
+        font-size: 28px;
+        padding: 20px 60px 20px 60px;
+        text-indent: 70px;
+        text-align: justify;
+      }
+      .title:hover {
+        text-decoration: none;
+        color: #bd9354;
+      }
+      .link:hover {
+        text-decoration: none;
+        color: #bd9354;
+      }
+      .course {
+        text-align: center;
+        color: #f0ece2;
+      }
+      .row1 {
+        padding: 100px;
+      }
+      .ps {
+        font-size: 21px;
+        color: #f0ece2;
+      }
+      .row2 {
+        font-size: 0px;
+        color: #f0ece2;
+      }
+      .row2 div {
+        margin: 0px;
+        padding: 0px;
+        height: 200px;
+        display: inline-block;
+      }
+      .col1 {
+        width: 33%;
+        font-size: initial;
+        vertical-align: middle;
+      }
+      .col2 {
+        width: 34%;
+        font-size: initial;
+        vertical-align: middle;
+      }
+      .col3 {
+        width: 33%;
+        font-size: initial;
+        vertical-align: middle;
+      }
+      div i {
+        color: #f0ece2;
+        padding-bottom: 20px;
+      }
+
+      .band {
+        font-size: 0px;
+      }
+      .band div {
+        margin: 0px;
+        padding: 0px;
+        height: 500px;
+        display: inline-block;
+      }
+      .mvosol {
+        width: 50%;
+        font-size: initial;
+        vertical-align: middle;
+        background-image: url(./mvö.jpg);
+        background-position: top;
+        background-size: cover;
+      }
+      .mvosag {
+        width: 50%;
+        font-size: initial;
+        vertical-align: middle;
+        background: linear-gradient(to bottom right, red -500%, blue 400%);
+      }
+      .mvosag h2 {
+        font-size: 48px;
+        color: #fff;
+        margin-left: 30px;
+        margin-top: 40px;
+      }
+      .mvosag p {
+        font-size: 28px;
+        color: #fff;
+        margin: 30px;
+        padding-bottom: 20px;
+      }
+      .mvosag a {
+        font-size: 28px;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius: 40px;
+        margin-left: 30px;
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        background-color: #fff;
+        color: purple;
+      }
+      .dumansol {
+        width: 50%;
+        font-size: initial;
+        vertical-align: middle;
+        background-image: url(./duman.jpg);
+        background-position: top;
+        background-size: cover;
+      }
+      .dumansag {
+        width: 50%;
+        font-size: initial;
+        vertical-align: middle;
+        background: linear-gradient(to top right, #deedf0 10%, #716f81 90%);
+        text-align: right;
+      }
+      .dumansag h2 {
+        font-size: 48px;
+        color: #000;
+        margin-right: 30px;
+        margin-top: 40px;
+      }
+      .dumansag p {
+        font-size: 28px;
+        color: #000;
+        margin: 30px;
+        padding-bottom: 20px;
+      }
+      .dumansag a {
+        font-size: 28px;
+        text-decoration: none;
+        border: 1px solid #000;
+        border-radius: 40px;
+        margin-right: 30px;
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+      }
+      .teosol {
+        width: 50%;
+        font-size: initial;
+        vertical-align: middle;
+        background-image: url(./teooooo.jpg);
+        background-position: top;
+        background-size: cover;
+      }
+      .teosag {
+        width: 50%;
+        font-size: initial;
+        vertical-align: middle;
+        background: conic-gradient(at 50% 100%, black, #ae00fb, black);
+      }
+      .teosag h2 {
+        font-size: 48px;
+        color: #96baff;
+        margin-left: 30px;
+        margin-top: 40px;
+      }
+      .teosag p {
+        font-size: 28px;
+        color: #96baff;
+        margin: 30px;
+        padding-bottom: 20px;
+      }
+      .teosag a {
+        font-size: 28px;
+        text-decoration: none;
+        border: 1px solid #96baff;
+        border-radius: 40px;
+        margin-left: 30px;
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        background-color: #96baff;
+        color: #4c0070;
+      }
+      .demirsol {
+        width: 50%;
+        font-size: initial;
+        vertical-align: middle;
+        background-image: url(./demir.jpg);
+        background-position: top;
+        background-size: cover;
+      }
+      .demirsag {
+        width: 50%;
+        font-size: initial;
+        vertical-align: middle;
+        background: linear-gradient(to left, #f0ece2 20%, #5b5b5b 95%);
+        text-align: right;
+      }
+      .demirsag h2 {
+        font-size: 48px;
+        color: #000;
+        margin-right: 30px;
+        margin-top: 40px;
+      }
+      .demirsag p {
+        font-size: 28px;
+        color: #000;
+        margin: 30px;
+        padding-bottom: 20px;
+      }
+      .demirsag a {
+        font-size: 28px;
+        text-decoration: none;
+        border: 1px solid #000;
+        border-radius: 40px;
+        margin-right: 30px;
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        background-color: #000;
+        color: #f0ece2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="mainpage">
+          <a href="" class="title aaa">Gitar Öğreniyoruz</a>
+        </div>
+        <nav class="links aaa">
+          <a href="" class="link">Mağaza</a>
+          <a href="" class="link">Forum</a>
+          <a href="" class="link">İletişim</a>
+        </nav>
+      </div>
+      <section class="border"></section>
+      <div class="main">
+        <h2>Gitara Başlamak</h2>
+        <p>
+          Gitar öğrenme, tıpkı araba kullanmak, konuşmak gibi bir öğrenme
+          sonucunda edinilen bir beceridir. Yani öğrenildikten sonra, bir
+          sonraki hareketin düşünülmeden, kendiliğinden geldiği bir öğrenmedir.
+          Nasıl ki araba kullanan birisinin araba sürerken yaptığı şekilde; bir
+          yandan debriyaja bir yandan da gaza bastığı gibi, aynı anda hem dikiz
+          aynasından arkayı kontrol etmesi hem de bir yandan radyoda çalan
+          şarkıya eşlik etmeyi doğal bir zincirleme ile yapıyorsa gitar öğrenmek
+          de bu şekilde olmasa da benzer bir işlevdedir.
+        </p>
+        <p>
+          Gitar çalmayı öğrenmede müzik kulağı ve ritim duygusunun önemi
+          yadsınamaz. Sıradan bir kulağı olup da yıllarca gitar kursuna giden,
+          ancak sadece kendisine öğretilen şeyleri hatasız çalabilen kişiler ve
+          gitarı kendi başına öğrendiği halde, güçlü kulağı sayesinde sayısız
+          şarkıyı baştan sona kusursuz çalabilen gitaristler düşünüldüğünde,
+          elbette ki ikinci kısım daha değerlidir. Dünya da isim yapmış,
+          duyulduğu anda kendini belli eden hemen her gitarist, gitar çalmayı
+          kendi başına öğrenen insanlardır. Gitar çalmayı öğrenmekteki kilit
+          nokta, sabırlı olmak ve çalışmaktır. Gitar çalmak için büyük bir
+          hevesle hareket ederek sakin ve kontrollü bir çalışma ile birlikte
+          başarılı olunabilir. Gitar çalmayı öğrenmek gerçekten de emek ve sabır
+          isteyen bir iştir.
+        </p>
+        <p>
+          Gitara başlayan insanların çok çok büyük bir kısmı için en büyük
+          engel, ilk birkaç haftalık süreçtir. Bu enstrümanı çalmayı güçlü ve
+          kararlı bir şekilde istemeyenler, istedikleri şeyleri çalmadıkça
+          üfleyip püflemeye, her seferinde gitarı ellerine daha az şevkle almaya
+          başlarlar. Ancak bu çok da şaşılası bir durum değildir zira insanoğlu
+          böyle bir canlıdır; aksi olsaydı herkes pek çok farklı alanda sürekli
+          başarılı olurdu. Yani bir insanın tembelliği, diğer birinin kazancı
+          oluyor bir şekilde.
+        </p>
+      </div>
+    </header>
+    <div style="height: 70px"></div>
+    <div class="course">
+      <div class="row row1">
+        <h2 style="padding-bottom: 30px; font-size: 32px">
+          Yapılması Gerekenler
+        </h2>
+        <p class="ps">
+          Gitar çalmaya yeni başlayacak olanlara verdiğimiz önerileri kısaca
+          toparlayacak olursak; <br />
+          Doğru ekipman seçmek, <br />
+          Acele etmemek ama zamanı verimli kullanmak, <br />
+          Gitar çalışırken kendini gözlemleyebilmek ve hatalarını düzeltmek,
+          <br />
+          Strese girmemek ve bu süreçten keyif almak. <br />
+          Bu önerilerimiz; aynı zamanda
+          <u> ‘Gitar çalmayı kolaylaştıran şeyler nelerdir?’</u> sorusunun da
+          cevabıdır.
+        </p>
+      </div>
+      <div class="row row2">
+        <div class="col col1">
+          <i class="fa-solid fa-ribbon fa-3x"></i>
+          <h1>Kaydol</h1>
+          <p class="ps">Uzman eğitmenler ile kurslarını tamamla!</p>
+        </div>
+        <div class="col col2">
+          <i class="fa-brands fa-leanpub fa-3x"></i>
+          <h1>Öğren</h1>
+          <p class="ps">İstediğin tarzı öğrenme fırsatın olsun!</p>
+        </div>
+        <div class="col col3">
+          <i class="fa-solid fa-music fa-3x"></i>
+          <h1>Çal</h1>
+          <p class="ps">İçinden geleni ritminle anlat!</p>
+        </div>
+      </div>
+    </div>
+    <div style="height: 100px"></div>
+    <div class="bands">
+      <div class="band">
+        <a
+          href="https://www.instagram.com/mvoofficial/"
+          target="_blank"
+          title="mor ve ötesi instagram sayfası"
+          ><div class="mvosol"></div
+        ></a>
+        <div class="mvosag">
+          <h2>mor ve ötesi</h2>
+          <p>
+            mor ve ötesi'nin parçalarıyla prova yapmak için kütüphanemizden
+            faydalanın.
+          </p>
+          <a
+            href="https://www.youtube.com/channel/UCqvzFW0qco9B_9rirRoRldg"
+            target="_blank"
+            title="mor ve ötesi youtube sayfası"
+            >mor ve ötesi</a
+          >
+        </div>
+      </div>
+
+      <div style="height: 150px"></div>
+
+      <div class="band">
+        <div class="dumansag">
+          <h2>Duman</h2>
+          <p>
+            Duman'ın parçalarıyla prova yapmak için kütüphanemizden faydalanın.
+          </p>
+          <a
+            href="https://www.youtube.com/channel/UCYLY-BIq0sSOdNXGm1FPR-w"
+            target="_blank"
+            title="duman youtube sayfası"
+            >Duman</a
+          >
+        </div>
+        <a
+          href="https://www.instagram.com/duman/?hl=tr"
+          target="_blank"
+          title="duman instagram sayfası"
+          ><div class="dumansol"></div
+        ></a>
+      </div>
+      <div style="height: 150px"></div>
+
+      <div class="band">
+        <a
+          href="https://www.instagram.com/teoman_official/?hl=tr"
+          target="_blank"
+          title="teoman instagram sayfası"
+          ><div class="teosol"></div
+        ></a>
+        <div class="teosag">
+          <h2>Teoman</h2>
+          <p>
+            Teoman'ın parçalarıyla prova yapmak için kütüphanemizden
+            faydalanabilirsiniz.
+          </p>
+          <a
+            href="https://www.youtube.com/channel/UCgBwHAuktyQLOCmx2u4dl3Q"
+            target="_blank"
+            title="teoman youtube sayfası"
+            >Teoman</a
+          >
+        </div>
+      </div>
+      <div style="height: 150px"></div>
+      <div class="band">
+        <div class="demirsag">
+          <h2>Demir Demirkan</h2>
+          <p>
+            Demir Demirkan'ın parçalarıyla prova yapmak için kütüphanemizden
+            faydalanın.
+          </p>
+          <a
+            href="https://www.youtube.com/channel/UCt9RegcJ9Nw17N1UulhwQtw"
+            target="_blank"
+            title="demir demirkan youtube sayfası"
+            >Demir Demirkan</a
+          >
+        </div>
+        <a
+          href="https://www.instagram.com/demirdemirkan/"
+          target="_blank"
+          title="demir demirkan instagram sayfası"
+          ><div class="demirsol"></div
+        ></a>
+      </div>
+    </div>
+    <div style="height: 400px"></div>
+  </body>
+</html>
