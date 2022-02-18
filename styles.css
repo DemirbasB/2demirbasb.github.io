@@ -1,0 +1,257 @@
+* {
+    font-family: "Kalam", cursive;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 24px;
+    background-image: url(images/pexels-pixabay-210766.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body, body a {
+    color: #f0ece2;
+}
+
+/* General purpose classes */
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Head section */
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em;
+    background-image: url(images/pexels-edward-eyer-811838.jpg);
+    background-size: cover;
+    background-position: center left;
+    border-bottom: 0.33em solid #ffffff;
+}
+
+.head .title {
+    font-size: 2.25em;
+    line-height: 1em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.head .title:hover {
+    color: #bd9354;
+}
+
+.head .links > a {
+    float: left;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 1em;
+}
+
+.head .links > a:last-child {
+    margin-right: inherit;
+}
+
+.head .links > a:hover {
+    color: #bd9354;
+}
+
+/* Main section */
+
+.main {
+    padding: 0 3em;
+    margin-top: 2em;
+}
+
+.main h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.main p {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 1em;
+    text-indent: 2.5em;
+}
+
+.main p:last-child {
+    margin-bottom: 0;
+}
+
+/* Course section */
+
+.course {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.course .description {
+    padding: 0 1.5em;
+    margin-bottom: 3em;
+}
+
+.course .description h2 {
+    margin-bottom: 1em;
+}
+
+.course .description p,
+.course .description ul li {
+    font-size: 0.9em;
+}
+
+.course .description ul li {
+    list-style: none;
+}
+
+.course .links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5em;
+}
+
+.course .links div h1 {
+    font-size: 1.5em;
+}
+
+/* Band section */
+
+.bands {
+    margin-top: 4em;
+}
+
+.bands .band {
+    display: flex;
+    margin-bottom: 5em;
+}
+
+.bands .band .content {
+    min-height: 500px;
+    width: 50%;
+    vertical-align: middle;
+    padding: 1.5em;
+}
+
+.bands .band .content h2 {
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+}
+
+.bands .band .content p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+.bands .band .content a {
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2em;
+    padding: 0 1em;
+    margin-bottom: 0.5em;
+    min-width: 200px;
+}
+
+.bands .band .image {
+    min-height: 500px;
+    width: 50%;
+    vertical-align: middle;
+    background-position: top;
+    background-size: cover;
+}
+
+.bands .band-duman .content,
+.bands .band-ddemirkan .content {
+    text-align: right;
+}
+
+.bands .band-mvo .content {
+    background: linear-gradient(to bottom right, red -500%, blue 400%);
+}
+
+.bands .band-mvo .content h2 {
+    color: #fff;
+}
+
+.bands .band-mvo .content p {
+    color: #fff;
+}
+
+.bands .band-mvo .content a {
+    background-color: #fff;
+    color: purple;
+}
+
+.bands .band-mvo .image {
+    background-image: url(images/mvö.jpg);
+}
+
+.bands .band-duman .content {
+    background: linear-gradient(to top right, #deedf0 10%, #716f81 90%);
+}
+
+.bands .band-duman .content h2 {
+    color: #000;
+}
+
+.bands .band-duman .content p {
+    color: #000;
+}
+
+.bands .band-duman .content a {
+    background-color: #000;
+    color: #fff;
+}
+
+.bands .band-duman .image {
+    background-image: url(images/duman.jpg);
+}
+
+.bands .band-teoman .content {
+    background: conic-gradient(at 50% 100%, black, #ae00fb, black);
+}
+
+.bands .band-teoman .content h2 {
+    color: #96baff;
+}
+
+.bands .band-teoman .content p {
+    color: #96baff;
+}
+
+.bands .band-teoman .content a {
+    background-color: #96baff;
+    color: #4c0070;
+}
+
+.bands .band-teoman .image {
+    background-image: url(images/teooooo.jpg);
+}
+
+.bands .band-ddemirkan .content {
+    background: linear-gradient(to left, #f0ece2 20%, #5b5b5b 95%);
+}
+
+.bands .band-ddemirkan .content h2 {
+    color: #000;
+}
+
+.bands .band-ddemirkan .content p {
+    color: #000;
+}
+
+.bands .band-ddemirkan .content a {
+    background-color: #000;
+    color: #f0ece2;
+}
+
+.bands .band-ddemirkan .image {
+    background-image: url(images/demir.jpg);
+}
